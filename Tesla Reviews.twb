@@ -1,0 +1,1338 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20232.23.0611.2007                               -->
+<workbook original-version='18.1' source-build='2023.2.0 (20232.23.0611.2007)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Scraped_Car_Review_tesla' inline='true' name='federated.0vg3e2s07zcbkl1fq5y3q1f0tcrs' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Scraped_Car_Review_tesla' name='textscan.0p5evdc0jk0qqj13cl0om1wbjg9y'>
+            <connection class='textscan' directory='C:/Users/Darling/Desktop/Quest for Internship/Data Project - Car Reviews/archive' filename='Scraped_Car_Review_tesla.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0p5evdc0jk0qqj13cl0om1wbjg9y' name='Scraped_Car_Review_tesla.csv' table='[Scraped_Car_Review_tesla#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='Review_Date' ordinal='1' />
+            <column datatype='string' name='Author_Name' ordinal='2' />
+            <column datatype='string' name='Vehicle_Title' ordinal='3' />
+            <column datatype='string' name='Review_Title' ordinal='4' />
+            <column datatype='string' name='Review' ordinal='5' />
+            <column datatype='real' name='Rating' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0p5evdc0jk0qqj13cl0om1wbjg9y' name='Scraped_Car_Review_tesla.csv' table='[Scraped_Car_Review_tesla#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='Review_Date' ordinal='1' />
+            <column datatype='string' name='Author_Name' ordinal='2' />
+            <column datatype='string' name='Vehicle_Title' ordinal='3' />
+            <column datatype='string' name='Review_Title' ordinal='4' />
+            <column datatype='string' name='Review' ordinal='5' />
+            <column datatype='real' name='Rating' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Scraped_Car_Review_tesla.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Scraped_Car_Review_tesla.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Scraped_Car_Review_tesla.csv_0A83256F5B9048519992358288CD977C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Review_Date</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Review_Date]</local-name>
+            <parent-name>[Scraped_Car_Review_tesla.csv]</parent-name>
+            <remote-alias>Review_Date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Scraped_Car_Review_tesla.csv_0A83256F5B9048519992358288CD977C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Author_Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Author_Name]</local-name>
+            <parent-name>[Scraped_Car_Review_tesla.csv]</parent-name>
+            <remote-alias>Author_Name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Scraped_Car_Review_tesla.csv_0A83256F5B9048519992358288CD977C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vehicle_Title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Vehicle_Title]</local-name>
+            <parent-name>[Scraped_Car_Review_tesla.csv]</parent-name>
+            <remote-alias>Vehicle_Title</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Scraped_Car_Review_tesla.csv_0A83256F5B9048519992358288CD977C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Review_Title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Review_Title]</local-name>
+            <parent-name>[Scraped_Car_Review_tesla.csv]</parent-name>
+            <remote-alias>Review_Title</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Scraped_Car_Review_tesla.csv_0A83256F5B9048519992358288CD977C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Review</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Review]</local-name>
+            <parent-name>[Scraped_Car_Review_tesla.csv]</parent-name>
+            <remote-alias>Review</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Scraped_Car_Review_tesla.csv_0A83256F5B9048519992358288CD977C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Rating]</local-name>
+            <parent-name>[Scraped_Car_Review_tesla.csv]</parent-name>
+            <remote-alias>Rating</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Scraped_Car_Review_tesla.csv_0A83256F5B9048519992358288CD977C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Author Name' datatype='string' name='[Author_Name]' role='dimension' type='nominal' />
+      <column caption='Review Date' datatype='string' name='[Review_Date]' role='dimension' type='nominal' />
+      <column caption='Review Title' datatype='string' name='[Review_Title]' role='dimension' type='nominal' />
+      <column caption='Vehicle Title' datatype='string' name='[Vehicle_Title]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Scraped_Car_Review_tesla.csv' datatype='table' name='[__tableau_internal_object_id__].[Scraped_Car_Review_tesla.csv_0A83256F5B9048519992358288CD977C]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Scraped_Car_Review_tesla.csv' id='Scraped_Car_Review_tesla.csv_0A83256F5B9048519992358288CD977C'>
+            <properties context=''>
+              <relation connection='textscan.0p5evdc0jk0qqj13cl0om1wbjg9y' name='Scraped_Car_Review_tesla.csv' table='[Scraped_Car_Review_tesla#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='Review_Date' ordinal='1' />
+                  <column datatype='string' name='Author_Name' ordinal='2' />
+                  <column datatype='string' name='Vehicle_Title' ordinal='3' />
+                  <column datatype='string' name='Review_Title' ordinal='4' />
+                  <column datatype='string' name='Review' ordinal='5' />
+                  <column datatype='real' name='Rating' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Scraped_Car_Review_tesla (2)' inline='true' name='federated.0up86m00itbxfm1dntyps04z5w3b' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Scraped_Car_Review_tesla' name='textscan.10jkcfx0qc9z191f7lfqd0go19ul'>
+            <connection class='textscan' directory='C:/Users/Darling/Desktop/Quest for Internship/Data Project - Car Reviews/archive' filename='Scraped_Car_Review_tesla.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.10jkcfx0qc9z191f7lfqd0go19ul' name='Scraped_Car_Review_tesla.csv' table='[Scraped_Car_Review_tesla#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='date' date-parse-format='&apos;on&apos; MM/dd/yy HH:mm a (zzz)' name='Review_Date' ordinal='1' />
+            <column datatype='string' name='Author_Name' ordinal='2' />
+            <column datatype='string' name='Vehicle_Title' ordinal='3' />
+            <column datatype='string' name='Review_Title' ordinal='4' />
+            <column datatype='string' name='Review' ordinal='5' />
+            <column datatype='real' name='Rating' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.10jkcfx0qc9z191f7lfqd0go19ul' name='Scraped_Car_Review_tesla.csv' table='[Scraped_Car_Review_tesla#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='date' date-parse-format='&apos;on&apos; MM/dd/yy HH:mm a (zzz)' name='Review_Date' ordinal='1' />
+            <column datatype='string' name='Author_Name' ordinal='2' />
+            <column datatype='string' name='Vehicle_Title' ordinal='3' />
+            <column datatype='string' name='Review_Title' ordinal='4' />
+            <column datatype='string' name='Review' ordinal='5' />
+            <column datatype='real' name='Rating' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Scraped_Car_Review_tesla.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Scraped_Car_Review_tesla.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Review_Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Review_Date]</local-name>
+            <parent-name>[Scraped_Car_Review_tesla.csv]</parent-name>
+            <remote-alias>Review_Date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Author_Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Author_Name]</local-name>
+            <parent-name>[Scraped_Car_Review_tesla.csv]</parent-name>
+            <remote-alias>Author_Name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vehicle_Title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Vehicle_Title]</local-name>
+            <parent-name>[Scraped_Car_Review_tesla.csv]</parent-name>
+            <remote-alias>Vehicle_Title</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Review_Title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Review_Title]</local-name>
+            <parent-name>[Scraped_Car_Review_tesla.csv]</parent-name>
+            <remote-alias>Review_Title</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Review</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Review]</local-name>
+            <parent-name>[Scraped_Car_Review_tesla.csv]</parent-name>
+            <remote-alias>Review</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Rating]</local-name>
+            <parent-name>[Scraped_Car_Review_tesla.csv]</parent-name>
+            <remote-alias>Rating</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Author Name' datatype='string' name='[Author_Name]' role='dimension' type='nominal' />
+      <column caption='Review Date' datatype='date' name='[Review_Date]' role='dimension' type='ordinal' />
+      <column caption='Review Title' datatype='string' name='[Review_Title]' role='dimension' type='nominal' />
+      <column caption='Vehicle Title' datatype='string' name='[Vehicle_Title]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Scraped_Car_Review_tesla.csv' datatype='table' name='[__tableau_internal_object_id__].[Scraped_Car_Review_tesla.csv_23FAC46085F44504A13A7868FCD6FE3E]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Scraped_Car_Review_tesla.csv' id='Scraped_Car_Review_tesla.csv_23FAC46085F44504A13A7868FCD6FE3E'>
+            <properties context=''>
+              <relation connection='textscan.10jkcfx0qc9z191f7lfqd0go19ul' name='Scraped_Car_Review_tesla.csv' table='[Scraped_Car_Review_tesla#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='date' date-parse-format='&apos;on&apos; MM/dd/yy HH:mm a (zzz)' name='Review_Date' ordinal='1' />
+                  <column datatype='string' name='Author_Name' ordinal='2' />
+                  <column datatype='string' name='Vehicle_Title' ordinal='3' />
+                  <column datatype='string' name='Review_Title' ordinal='4' />
+                  <column datatype='string' name='Review' ordinal='5' />
+                  <column datatype='real' name='Rating' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Sheet1 (processed_reviews_Tesla)' inline='true' name='federated.0sf4nsg10n5a2e17o4k0t1rnfqga' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='processed_reviews_Tesla' name='excel-direct.0tdd5e701stjxa1g9x43g07p13ez'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Darling/Desktop/Quest for Internship/Data Project - Car Reviews/processed_reviews_Tesla.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0tdd5e701stjxa1g9x43g07p13ez' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:D141:no:A1:D141:0' header='yes' outcome='6'>
+            <column datatype='string' name='Review_Date' ordinal='0' />
+            <column datatype='string' name='Vehicle_Title' ordinal='1' />
+            <column datatype='real' name='Rating' ordinal='2' />
+            <column datatype='string' name='Review Top 10 Phrases' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0tdd5e701stjxa1g9x43g07p13ez' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:D141:no:A1:D141:0' header='yes' outcome='6'>
+            <column datatype='string' name='Review_Date' ordinal='0' />
+            <column datatype='string' name='Vehicle_Title' ordinal='1' />
+            <column datatype='real' name='Rating' ordinal='2' />
+            <column datatype='string' name='Review Top 10 Phrases' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D141:no:A1:D141:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Review_Date</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Review_Date]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Review_Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_09A918B6AEBF42BD9E4979E5AA4D5051]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vehicle_Title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Vehicle_Title]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Vehicle_Title</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_09A918B6AEBF42BD9E4979E5AA4D5051]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Rating]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Rating</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_09A918B6AEBF42BD9E4979E5AA4D5051]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Review Top 10 Phrases</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Review Top 10 Phrases]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Review Top 10 Phrases</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_09A918B6AEBF42BD9E4979E5AA4D5051]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Review Date' datatype='string' name='[Review_Date]' role='dimension' type='nominal' />
+      <column caption='Vehicle Title' datatype='string' name='[Vehicle_Title]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_09A918B6AEBF42BD9E4979E5AA4D5051]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_09A918B6AEBF42BD9E4979E5AA4D5051'>
+            <properties context=''>
+              <relation connection='excel-direct.0tdd5e701stjxa1g9x43g07p13ez' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:D141:no:A1:D141:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Review_Date' ordinal='0' />
+                  <column datatype='string' name='Vehicle_Title' ordinal='1' />
+                  <column datatype='real' name='Rating' ordinal='2' />
+                  <column datatype='string' name='Review Top 10 Phrases' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Sheet1 (processed_reviews_Tesla) (2)' inline='true' name='federated.0pny4s80f3gl0a1319sh21sqf14n' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='processed_reviews_Tesla' name='excel-direct.0jlvo6o1o6v0ul15mjuli05lvtgm'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Darling/Desktop/Quest for Internship/Data Project - Car Reviews/processed_reviews_Tesla.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0jlvo6o1o6v0ul15mjuli05lvtgm' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:D141:no:A1:D141:0' header='yes' outcome='6'>
+            <column datatype='string' name='Review_Date' ordinal='0' />
+            <column datatype='string' name='Vehicle_Title' ordinal='1' />
+            <column datatype='real' name='Rating' ordinal='2' />
+            <column datatype='string' name='Review Top 10 Phrases' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0jlvo6o1o6v0ul15mjuli05lvtgm' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:D141:no:A1:D141:0' header='yes' outcome='6'>
+            <column datatype='string' name='Review_Date' ordinal='0' />
+            <column datatype='string' name='Vehicle_Title' ordinal='1' />
+            <column datatype='real' name='Rating' ordinal='2' />
+            <column datatype='string' name='Review Top 10 Phrases' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D141:no:A1:D141:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Review_Date</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Review_Date]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Review_Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_40FFED5A68784D7BA39773FDDCF6BD9F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vehicle_Title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Vehicle_Title]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Vehicle_Title</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_40FFED5A68784D7BA39773FDDCF6BD9F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Rating]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Rating</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_40FFED5A68784D7BA39773FDDCF6BD9F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Review Top 10 Phrases</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Review Top 10 Phrases]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Review Top 10 Phrases</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_40FFED5A68784D7BA39773FDDCF6BD9F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Review Date' datatype='string' name='[Review_Date]' role='dimension' type='nominal' />
+      <column caption='Vehicle Title' datatype='string' name='[Vehicle_Title]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_40FFED5A68784D7BA39773FDDCF6BD9F]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_40FFED5A68784D7BA39773FDDCF6BD9F'>
+            <properties context=''>
+              <relation connection='excel-direct.0jlvo6o1o6v0ul15mjuli05lvtgm' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:D141:no:A1:D141:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Review_Date' ordinal='0' />
+                  <column datatype='string' name='Vehicle_Title' ordinal='1' />
+                  <column datatype='real' name='Rating' ordinal='2' />
+                  <column datatype='string' name='Review Top 10 Phrases' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Sheet1 (processed_reviews_Tesla) (3)' inline='true' name='federated.0cykwcy0gtdsjj16dmq3u1q3gfjt' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='processed_reviews_Tesla' name='excel-direct.0o64xn21eeu3mc185tifc0knsc92'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Darling/Desktop/Quest for Internship/Data Project - Car Reviews/processed_reviews_Tesla.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0o64xn21eeu3mc185tifc0knsc92' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:H141:no:A1:H141:0' header='yes' outcome='2'>
+            <column datatype='string' name='Review_Date' ordinal='0' />
+            <column datatype='string' name='Vehicle_Year' ordinal='1' />
+            <column datatype='string' name='Vehicle_Make' ordinal='2' />
+            <column datatype='string' name='Vehicle_Model' ordinal='3' />
+            <column datatype='string' name='Vehicle_CarType' ordinal='4' />
+            <column datatype='string' name='Vehicle_Trim' ordinal='5' />
+            <column datatype='real' name='Rating' ordinal='6' />
+            <column datatype='string' name='Review Top 10 Phrases' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0o64xn21eeu3mc185tifc0knsc92' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:H141:no:A1:H141:0' header='yes' outcome='2'>
+            <column datatype='string' name='Review_Date' ordinal='0' />
+            <column datatype='string' name='Vehicle_Year' ordinal='1' />
+            <column datatype='string' name='Vehicle_Make' ordinal='2' />
+            <column datatype='string' name='Vehicle_Model' ordinal='3' />
+            <column datatype='string' name='Vehicle_CarType' ordinal='4' />
+            <column datatype='string' name='Vehicle_Trim' ordinal='5' />
+            <column datatype='real' name='Rating' ordinal='6' />
+            <column datatype='string' name='Review Top 10 Phrases' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>2</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:H141:no:A1:H141:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Review_Date</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Review_Date]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Review_Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_D3F2B80D6CC244BDB7AC1E629E1E4E2F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vehicle_Year</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Vehicle_Year]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Vehicle_Year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_D3F2B80D6CC244BDB7AC1E629E1E4E2F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vehicle_Make</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Vehicle_Make]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Vehicle_Make</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_D3F2B80D6CC244BDB7AC1E629E1E4E2F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vehicle_Model</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Vehicle_Model]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Vehicle_Model</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_D3F2B80D6CC244BDB7AC1E629E1E4E2F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vehicle_CarType</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Vehicle_CarType]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Vehicle_CarType</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_D3F2B80D6CC244BDB7AC1E629E1E4E2F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vehicle_Trim</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Vehicle_Trim]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Vehicle_Trim</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_D3F2B80D6CC244BDB7AC1E629E1E4E2F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Rating]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Rating</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_D3F2B80D6CC244BDB7AC1E629E1E4E2F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Review Top 10 Phrases</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Review Top 10 Phrases]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Review Top 10 Phrases</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_D3F2B80D6CC244BDB7AC1E629E1E4E2F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Review Date' datatype='string' name='[Review_Date]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_D3F2B80D6CC244BDB7AC1E629E1E4E2F]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_D3F2B80D6CC244BDB7AC1E629E1E4E2F'>
+            <properties context=''>
+              <relation connection='excel-direct.0o64xn21eeu3mc185tifc0knsc92' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:H141:no:A1:H141:0' header='yes' outcome='2'>
+                  <column datatype='string' name='Review_Date' ordinal='0' />
+                  <column datatype='string' name='Vehicle_Year' ordinal='1' />
+                  <column datatype='string' name='Vehicle_Make' ordinal='2' />
+                  <column datatype='string' name='Vehicle_Model' ordinal='3' />
+                  <column datatype='string' name='Vehicle_CarType' ordinal='4' />
+                  <column datatype='string' name='Vehicle_Trim' ordinal='5' />
+                  <column datatype='real' name='Rating' ordinal='6' />
+                  <column datatype='string' name='Review Top 10 Phrases' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Tesla Ratings'>
+      <layout-options export-pages-down='0' export-scale-mode-auto='false' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (processed_reviews_Tesla) (3)' name='federated.0cykwcy0gtdsjj16dmq3u1q3gfjt' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0cykwcy0gtdsjj16dmq3u1q3gfjt'>
+            <column datatype='real' name='[Rating]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Vehicle_Model]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Vehicle_Year]' role='dimension' type='nominal' />
+            <column-instance column='[Rating]' derivation='Avg' name='[avg:Rating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Vehicle_Model]' derivation='None' name='[none:Vehicle_Model:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Vehicle_Year]' derivation='None' name='[none:Vehicle_Year:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0cykwcy0gtdsjj16dmq3u1q3gfjt].[none:Vehicle_Model:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Vehicle_Model:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Vehicle_Model:nk]' member='&quot;Roadster Convertible&quot;' />
+                <groupfilter function='member' level='[none:Vehicle_Model:nk]' member='%null%' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0cykwcy0gtdsjj16dmq3u1q3gfjt].[none:Vehicle_Model:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.0cykwcy0gtdsjj16dmq3u1q3gfjt].[avg:Rating:qk]' field-type='quantitative' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0cykwcy0gtdsjj16dmq3u1q3gfjt].[avg:Rating:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='dark' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0cykwcy0gtdsjj16dmq3u1q3gfjt].[none:Vehicle_Model:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.60000002384185791' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0cykwcy0gtdsjj16dmq3u1q3gfjt].[avg:Rating:qk]</rows>
+        <cols>[federated.0cykwcy0gtdsjj16dmq3u1q3gfjt].[none:Vehicle_Year:nk]</cols>
+      </table>
+      <simple-id uuid='{405E32FE-4484-4016-85ED-3D7475C68020}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <layout-options export-orientation='landscape' export-pages-down='0' export-scale-mode-auto='false' />
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='Sheet1 (processed_reviews_Tesla) (3)' name='federated.0cykwcy0gtdsjj16dmq3u1q3gfjt' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0cykwcy0gtdsjj16dmq3u1q3gfjt'>
+        <column datatype='string' name='[Vehicle_Model]' role='dimension' type='nominal' />
+        <column-instance column='[Vehicle_Model]' derivation='None' name='[none:Vehicle_Model:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='82400' x='800' y='1000'>
+              <zone h='98000' id='3' name='Tesla Ratings' w='82400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='18875' id='8' name='Tesla Ratings' param='[federated.0cykwcy0gtdsjj16dmq3u1q3gfjt].[none:Vehicle_Model:nk]' type-v2='filter' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options export-orientation='landscape' export-pages-down='0' export-scale-mode-auto='false' />
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='12' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='11' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='18875' id='8' mode='checkdropdown' name='Tesla Ratings' param='[federated.0cykwcy0gtdsjj16dmq3u1q3gfjt].[none:Vehicle_Model:nk]' type-v2='filter' w='16000' x='83200' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Tesla Ratings' w='82400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{5C009A53-5B44-48D7-B9CA-EFB88D6AC2AA}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='141'>
+    <window class='worksheet' maximized='true' name='Tesla Ratings'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0cykwcy0gtdsjj16dmq3u1q3gfjt].[none:Vehicle_Model:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0cykwcy0gtdsjj16dmq3u1q3gfjt].[none:Vehicle_Model:nk]' type='color' />
+            <card AVG='true' KURTOSIS='false' MAX='true' MEDIAN='true' MIN='true' QUART1='false' QUART3='false' SKEWNESS='false' STDEV='false' SUM='true' type='summary' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='92'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0cykwcy0gtdsjj16dmq3u1q3gfjt].[avg:Rating:qk]</field>
+            <field>[federated.0cykwcy0gtdsjj16dmq3u1q3gfjt].[none:Review Top 10 Phrases:nk]</field>
+            <field>[federated.0cykwcy0gtdsjj16dmq3u1q3gfjt].[none:Vehicle_CarType:nk]</field>
+            <field>[federated.0cykwcy0gtdsjj16dmq3u1q3gfjt].[none:Vehicle_Make:nk]</field>
+            <field>[federated.0cykwcy0gtdsjj16dmq3u1q3gfjt].[none:Vehicle_Model:nk]</field>
+            <field>[federated.0pny4s80f3gl0a1319sh21sqf14n].[none:Review Top 10 Phrases:nk]</field>
+            <field>[federated.0sf4nsg10n5a2e17o4k0t1rnfqga].[none:Review Top 10 Phrases:nk]</field>
+            <field>[federated.0sf4nsg10n5a2e17o4k0t1rnfqga].[none:Vehicle_Title:nk]</field>
+            <field>[federated.0up86m00itbxfm1dntyps04z5w3b].[:Measure Names]</field>
+            <field>[federated.0up86m00itbxfm1dntyps04z5w3b].[none:Review:nk]</field>
+            <field>[federated.0up86m00itbxfm1dntyps04z5w3b].[none:Vehicle_Title:nk]</field>
+            <field>[federated.0up86m00itbxfm1dntyps04z5w3b].[yr:Review_Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{56CF12F3-9C40-425A-9EA6-B4BBCB502EAC}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Tesla Ratings'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{9AE92A88-C806-409C-AD10-0351D91546AC}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      AElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Tesla Ratings' width='192'>
+      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
+      C1RCBwAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
