@@ -10,14 +10,12 @@ def clean_text(text): # Clean the Reviews of punctuations, non-ASCII chars, extr
     text = text.lower()
     # Remove non-ASCII characters
     text = re.sub(r'[^\x00-\x7F]+', ' ', text)
-    # Remove punctuations
-    text = re.sub(r'[^\w\s]', ' ', text)
     # Remove extra space
     text = re.sub(r'\s+', ' ', text).strip()
     return text
 
 def extract_top_phrases(review, max_phrases=10): # NLP RAKE library to rank top phrases
-    r = Rake()
+    r = Rake(punctuations=(['(', ')', ',', '.', '),', ').']))
     r.extract_keywords_from_text(review)
     phrases = r.get_ranked_phrases()
     return ' '.join(phrases[:max_phrases]) 
@@ -57,26 +55,6 @@ df['Review_Date'] = df['Review_Date'].str.split().str[1]
 # Axis applies the function row-wise 
 df = df.apply(extract_vehicle_title, axis=1)
 
-# Use RAKE once more on the results for a Summary Dataframe
-"""
-results = []
-groups = df.groupby(['Vehicle_Year', 'Vehicle_Model'])
-for (year, model), group in groups:
-    aggregated_review = ' '.join(group['Review'].to_list())
-    avg_rating = group['Rating'].mean()
-
-    top_phrases = extract_top_phrases(aggregated_review, 10)
-
-    results.append({
-        'Year': year,
-        'Model': model,
-        'Average Rating': avg_rating,
-        'Top Phrases': ' '.join(top_phrases)
-    })
-
-summary_df = pd.DataFrame(results)"""
-
 
 # Save the results to a new excel sheet
 df[['Review_Date', 'Vehicle_Year', 'Vehicle_Make', 'Vehicle_Model', 'Vehicle_CarType', 'Vehicle_Trim', 'Rating', 'Review Top 10 Phrases']].to_excel("processed_reviews_Tesla.xlsx", index=False)
-#summary_df.to_excel("summary_reviews_Tesla.xlsx", index=False)
